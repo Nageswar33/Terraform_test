@@ -4,3 +4,7 @@ data "aws_ami" "Nag" {
   name_regex  = "Centos-*"
   owners = ["891377247566"]
 }
+
+output "ami"{
+  value = data.aws_ami.Nag
+}
