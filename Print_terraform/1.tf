@@ -1,10 +1,9 @@
-data "aws_ami" "Nag1" {
-  executable_users = ["self"]
-  most_recent = "true"
+data "aws_ami" "ami" {
+  most_recent = " true "
   name_regex  = "Cent*"
-  owners = ["self"]
+  owners = ["891377247566"]
+}
 
-}
-output "ami" {
-  value = data.aws_ami.Nag1
-}
+ output  "ami" {
+     value = data.aws_ami.ami
+   }
