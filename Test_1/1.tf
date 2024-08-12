@@ -5,12 +5,12 @@ resource "aws_instance" "Nag2" {
   vpc_security_group_ids = ["sg-034a98c1bcbfe9aa0"]
 
   tags = {
-    Name = "Nag2"
+    Name = "Nag3"
   }
 }
 
 data "aws_ami" "ami" {
- // most_recent = true
+  most_recent = true
  // name_regex  = "Cent*"
   owners = [ "891377247566" ]
 }
