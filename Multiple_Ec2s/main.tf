@@ -29,3 +29,9 @@ resource "aws_instance" "instance" {
     Name = lookup(each.value , "name",null)
   }
 }
+
+output "instance" {
+  value = "Displaying Nageswara Rao"
+  value = aws_instance.instance
+}
+
