@@ -11,10 +11,10 @@ variable "instance_type" {
 
 variable "components"{
   default = {
-    frontend = { }
-    mongodb = {}
-    mysql = {}
-    rebbitmq = {}
+    frontend = { name ="frontend" }
+    mongodb = { name ="mongodb" }
+    mysql = { name ="mysql" }
+    rebbitmq = { name ="rebbitmq" }
   }
 }
 
