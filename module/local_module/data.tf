@@ -1,5 +1,5 @@
 variable "ami"{
-  default = "ami-0b4f379183e5706b9 "
+  default = "ami-0b4f379183e5706b9"
 }
 
 variable "security_group"{
