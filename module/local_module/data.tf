@@ -13,7 +13,7 @@ resource "aws_instance" "instance"{
   }
 }
 
-variable "ami"{ }
+variable "ami"{}
 variable "instance_type" {}
 variable "security_group" {}
 
