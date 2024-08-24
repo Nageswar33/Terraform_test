@@ -2,7 +2,7 @@ module "test" {
   source = "./local_module"
   instance_type = var.instance_type
   ami = var.ami
-  vpc_security_group_ids = var.security_group
+  security_group = var.security_group
 }
 
 output "result"{
