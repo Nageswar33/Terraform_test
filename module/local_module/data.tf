@@ -1,13 +1,6 @@
-variable "ami"{
-  default = "ami-0b4f379183e5706b9"
-}
 
-variable "security_group"{
-  default =[ "sg-0dd1b473651c96866" ]
-}
+data "aws_ami" "ami"{
 
-variable "instance_type"{
-  default = "t2.micro"
 }
 
 resource "aws_instance" "instance"{
@@ -20,6 +13,10 @@ resource "aws_instance" "instance"{
   }
 }
 
+variable "ami"{ }
+variable "instance_type" {}
+variable "security_group" {}
+
 output "result"{
-  value = aws_instance.instance
+  value = data.aws_ami
 }
