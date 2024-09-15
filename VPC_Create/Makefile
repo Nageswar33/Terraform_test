@@ -4,8 +4,8 @@ default:
 dev:
 
 		 rm  -rf  .terraform
-		 terraform  init -backend-config = dev-vpc/state.tfvars
-		 terraform  apply -auto-approve -var_file = dev_vpc/main.tfvars
+		 terraform  init -backend-config=dev-vpc/state.tfvars
+		 terraform  apply -auto-approve -var_file=dev_vpc/main.tfvars
 
 dev-destroy:
 
