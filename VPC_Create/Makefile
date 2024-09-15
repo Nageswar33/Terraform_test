@@ -11,4 +11,4 @@ dev-destroy:
 
 			   rm -rf .terraform
 			   terraform  init -backend-config=dev_vpc/state.tfvars
-			   terraform  destroy -auto-approve -var_file=dev_vpc/main.tfvars
+			   terraform  destroy -auto-approve -var-file=dev_vpc/main.tfvars
