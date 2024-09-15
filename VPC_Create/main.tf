@@ -1,6 +1,7 @@
 module "components" {
-  source = "./tf_module_vpc"
+  source = "https://github.com/Nageswar33/tf_module_vpc.git"
 
- for_each = var.vpc
- cidr = each.value["cidr"]
+  for_each = var.vpc
+  cidr = each.value["cidr"]
+
 }
