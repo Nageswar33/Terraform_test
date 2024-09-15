@@ -1,14 +1,13 @@
-dev:
-    rm -rf .terraform
-    terraform init -backend-config=dev-vpc/state.tfvars
-    terraform apply -auto-approve -var_file=dev_vpc/main.tfvars
+default:
+	echo None
 
-prod:
-      rm -rf .terraform
-      terraform init -backend-config=prod-vpc/state.tfvars
-      terraform apply -auto-approve -var_file=prod_vpc/main.tfvars
+dev:
+
+          rm  -rf  .terraform
+          terraform  init -backend-config = dev-vpc/state.tfvars
+          terraform  apply -auto-approve -var_file = dev_vpc/main.tfvars
 
 dev-destroy:
-            rm -rf .terraform
-            terraform init -backend-config=dev-vpc/state.tfvars
-            terraform destroy -auto-approve -var_file=dev_vpc/main.tfvars
+               rm  -rf  .terraform
+               terraform  init -backend-config=dev_vpc/state.tfvars
+               terraform  destroy -auto-approve -var_file=dev_vpc/main.tfvars
