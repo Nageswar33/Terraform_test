@@ -9,3 +9,4 @@ module "vpc" {
 output "vpc"{
   value = module.vpc
 }
+
