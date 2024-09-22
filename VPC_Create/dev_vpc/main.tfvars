@@ -19,3 +19,4 @@ vpc = {
 }
 
 variable default_vpc_id = "vpc-04cbf13f18db0fbfd"
+variable default_cidr = "172.31.0.0/16"
